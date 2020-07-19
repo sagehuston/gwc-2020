@@ -1,0 +1,33 @@
+/* CSS files add styling rules to your content */
+
+body {
+  background-image: url("https://cdn.glitch.com/9278cf6d-5851-46f8-afec-83787d12f0ee%2Fminecraft-655158_1280.jpg?v=1594382537507");
+  background-size: cover;
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  color: #91DCFF
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+
+h2 {
+  margin-top: 2em; 
+}
+
+.question {
+  display: flex;
+  margin-top: 2em;
+}
+
+.answer-choice img {
+  height: 10em;
+  width: 250px;
+  object-fit: cover;
+}
+
+.answer-choice {
+  text-align: center;
+}
