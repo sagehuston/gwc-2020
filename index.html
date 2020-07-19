@@ -1,62 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!-- TODO: Update the title of your website -->
-    <title>Sarah H's website</title>
-
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/styles.css" />
+    <title>Personality Quiz Starter Code</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  </head>  
   <body>
-    <!-- TODO: Add a navigation bar  -->
-    <div class="navbar">
-      <nav>
-        <ul>
-          <li><a href="index.html" style="color:white">Home</a></li>
-          <li><a href="portfolio.html" style="color:white">Portfolio</a></li>
-        </ul>
-      </nav>
+  <h1>Which Minecraft mob are you?</h1>
+    
+    <h2>What is your favorite season?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <img src="https://cdn.glitch.com/9278cf6d-5851-46f8-afec-83787d12f0ee%2Fwinter.jpg?v=1594380790235">
+        <br>
+        <button id="q1a1">Winter</button>
+      </div>
+      <div class="answer-choice">
+        <img src="https://cdn.glitch.com/9278cf6d-5851-46f8-afec-83787d12f0ee%2Fsergey-shmidt-koy6FlCCy5s-unsplash.jpg?v=1594380860190">
+        <br>
+        <button id="q1a2">Spring</button>
+      </div>
+      <div class="answer-choice">
+        <img src="https://cdn.glitch.com/9278cf6d-5851-46f8-afec-83787d12f0ee%2Fvicko-mozara-m82uh_vamhg-unsplash.jpg?v=1594380883795" >
+        <br>
+        <button id="q1a3">Summer</button>
+      </div>
+      <div class="answer-choice">
+        <img src="https://cdn.glitch.com/9278cf6d-5851-46f8-afec-83787d12f0ee%2Fautumn-mott-rodeheaver-SPd9CSoWCkY-unsplash.jpg?v=1594380902907">
+        <br>
+        <button id="q1a4">Fall</button>
+      </div>
+    </div> 
+    
+    <h2>If you could have a superpower, which one would you pick?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <img src="https://cdn.glitch.com/9278cf6d-5851-46f8-afec-83787d12f0ee%2Fmads-schmidt-rasmussen-6YmzwamGzCg-unsplash.jpg?v=1594381315301">
+        <br>
+        <button id="q2a1">Invisibility</button>
+      </div>
+      <div class="answer-choice">
+        <img src="https://cdn.glitch.com/9278cf6d-5851-46f8-afec-83787d12f0ee%2Fgaro-uzunyan-4-npFikIDGs-unsplash.jpg?v=1594381377275">
+        <br>
+        <button id="q2a2">Healing</button>
+      </div>
+      <div class="answer-choice">
+        <img src="https://cdn.glitch.com/9278cf6d-5851-46f8-afec-83787d12f0ee%2Fwill-terra--4SnP61VGbU-unsplash.jpg?v=1594381392096" >
+        <br>
+        <button id="q2a3">Underwater breathing</button>
+      </div>
+      <div class="answer-choice">
+        <img src="https://cdn.glitch.com/9278cf6d-5851-46f8-afec-83787d12f0ee%2Fsven-scheuermeier-YhdEgF-qWlI-unsplash.jpg?v=1594381406168">
+        <br>
+        <button id="q2a4">Flying</button>
+      </div>
+    </div> 
+    
+    <h2>Which is your dream house?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <img src="https://cdn.glitch.com/9278cf6d-5851-46f8-afec-83787d12f0ee%2Fian-keefe-OgcJIKRnRC8-unsplash.jpg?v=1594381582515">
+        <br>
+        <button id="q3a1">Cabin</button>
+      </div>
+      <div class="answer-choice">
+        <img src="https://cdn.glitch.com/9278cf6d-5851-46f8-afec-83787d12f0ee%2Fbertrand-bouchez-DAHXjK2NeDM-unsplash.jpg?v=1594381621931">
+        <br>
+        <button id="q3a2">Cottage</button>
+      </div>
+      <div class="answer-choice">
+        <img src="https://cdn.glitch.com/9278cf6d-5851-46f8-afec-83787d12f0ee%2Fkatie-manning-oSIuIEZZ6v0-unsplash.jpg?v=1594381714070">
+        <br>
+        <button id="q3a3">Beach house</button>
+      </div>
+      <div class="answer-choice">
+        <img src="https://cdn.glitch.com/9278cf6d-5851-46f8-afec-83787d12f0ee%2Fjoshua-newton-LxQe7xNGHJA-unsplash.jpg?v=1594381849659">
+        <br>
+        <button id="q3a4">Tree house </button>
+      </div>
+    </div> 
+    
+    <div class="result">
+      <h2 id="result">Your result is... </h2>
     </div>
-
-    <!-- TODO: Update the heading with the name of your website -->
-
-    <div class="home-title">
-      <h1>Sarah's Website</h1>
-    </div>
-
-    <!-- TODO: Continue to add content to your homepage using your wireframe as a guide.-->
-
-    <img
-      src="https://cdn.glitch.com/9f440fb2-b6a9-4ae8-9ea9-4f8706a605b2%2Fbeachboi.jpg?v=1594592096368"
-      class="main-img"
-    />
-
-    <div class="greeting">
-      <h1>
-        Howdy :)
-      </h1>
-    </div>
-
-    <div class="home-text">
-      <p>
-        Hi! I'm Sarah and I live in Hawaii. I like to hang out with my friends
-        and find new places to swim at. I also like videogames, music, and
-        basketball.
-      </p>
-    </div>
-
-    <!-- TODO: Add a <div> container around sections of your homepage. -->
   </body>
 </html>
